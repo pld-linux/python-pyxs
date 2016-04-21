@@ -21,10 +21,18 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.6
 BuildRequires:	python-setuptools
+BuildRequires:	python-pytest-runner
+%if %{with tests}
+BuildRequires:	python-pytest
+%endif
 %endif
 %if %{with python3}
 BuildRequires:	python3-modules >= 3.4
 BuildRequires:	python3-setuptools
+BuildRequires:	python3-pytest-runner
+%if %{with tests}
+BuildRequires:	python3-pytest
+%endif
 %endif
 %if %{with docs}
 BuildRequires:	sphinx-pdg

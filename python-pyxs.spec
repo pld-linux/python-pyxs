@@ -27,7 +27,7 @@ BuildRequires:	python-pytest
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 3.4
+BuildRequires:	python3-modules >= 1:3.4
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-pytest-runner
 %if %{with tests}
